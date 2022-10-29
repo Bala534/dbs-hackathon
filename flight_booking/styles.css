@@ -33,8 +33,7 @@ form {
 }
 
 fieldset {
-    border: none;
-    
+    padding: 10px;
 }
 
 input, select, option {
@@ -44,15 +43,26 @@ input, select, option {
     padding: 5px;
     width: 100%;
     height: 2rem;
+    margin: 10px;
+}
+
+.inline {
+    display: inline;
+    vertical-align: middle;
+    width: unset;
+    margin: 5px 0 0 -5px;
 }
 
 input[id='submit'] {
-    margin-top: 50px;
+    margin-top: 20px;
     background-color: blue;
     color: white;
+    height: 2rem;
 }
 
+
 input[id='submit']:hover {
-    margin-top: 50px;
+    margin-top: 20px;
     background-color: green;
+    
 }
