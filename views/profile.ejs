@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="userprofile.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ddd;
+    align-items: center;
+    justify-content: center;
+    font-family: "Tajawal", Arial;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+}
+
+.box{
+    flex: 30%;
+    display: table;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    background-color: #0d1425;
+    color: #fff;
+    padding: 30px 30px;
+    border-radius: 20px;
+}
+
+.box img{
+    border-radius: 50%;
+    border: 2px solid #fff;
+    height: 250px;
+    width: 250px;
+    margin-left: 80px;
+}
+
+.box ul{
+    margin-top: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+.box ul li{
+    list-style: none;
+    margin-top: 50px;
+    font-weight: 100;
+}
+
+.box ul li i{
+    cursor: pointer;
+    margin: 10px;
+    font-size: 40px;
+}
+
+.box ul li i:hover{
+    opacity: 0.6;
+}
+
+.About{
+    margin-left: 20px;
+    flex: 50%;
+    display: table;
+    padding: 30px 30px;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.About h1{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.About ul li{
+    list-style: none;
+}
+
+.About ul{
+    margin-top: 20px;
+}
+.button {
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 50px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Varela+Round&display=swap');
+
+
+@media screen and (max-width: 1068px) {
+    .container{
+        display: table;
+    }
+
+    .box{
+        width: 100%;
+    }
+
+    .About{
+        width: 100%;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    .About h1{
+        text-align: center;
+    }
+    
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="data:image/jpeg;base64,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" alt="">
+            <div>
+                <ul>
+                    <li>Name :  <%= data[0].Name %></li>
+                </ul>
+                <br>
+                <a href="/new"><input type="button" class="button" value="Book A New Journey"></a>
+
+            </div>
+        </div>
+        <div class="About">
+            <ul>
+                <h1>MY BOOKINGS</h1>
+            </ul>
+            <div class="min-h-screen w-full bg-gray-300">
+                <div class="max-w-screen-md mx-auto px-10 pt-20">
+                    <div class="bg-white md:h-40 rounded-lg shadow-md flex flex-wrap flex-col-reverse md:flex-col">
+                        <div class="w-full p-8">
+                        <h3 class="text-3xl font-bold">HYD - CHENNAI</h3>
+                        <p class="w-full">Number of tickets : 2</p>
+                        <p>Price : Rs.2500/-</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="bg-white md:h-40 rounded-lg shadow-md flex flex-wrap flex-col-reverse md:flex-col">
+                        <div class="w-full p-8">
+                        <h3 class="text-3xl font-bold">HYD - CHENNAI</h3>
+                        <p class="w-full">Number of tickets : 2</p>
+                        <p>Price : Rs.2500/-</p>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="bg-white md:h-40 rounded-lg shadow-md flex flex-wrap flex-col-reverse md:flex-col">
+                        <div class="w-full p-8">
+                        <h3 class="text-3xl font-bold">HYD - CHENNAI</h3>
+                        <p class="w-full">Number of tickets : 2</p>
+                        <p>Price : Rs.2500/-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

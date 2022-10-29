@@ -1,0 +1,63 @@
+<!-- to book new journy
+<button><a href="payment.html">payment</a></button> -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book flight</title>
+    <link rel="stylesheet" href="newjourney.css">
+</head>
+<body>
+    <div class="page">
+    <h1>Book your flight</h1>
+    <p>Get the best experience</p>
+    <form action="/newticket" method="get">
+        <fieldset class="flight-details div">
+            <label for="from-address">From:</label>
+            <select name="from" id="from-address">
+                <option value="none">--select option--</option>
+                <option value="vizag">Vizag</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="banglore">Banglore</option>
+                <option value="chennai">Chennai</option>
+                <option value="delhi">Delhi</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="pune">Pune</option>
+            </select>
+            <label for="to-address">To:</label>
+            <select name="to" id="to-address">
+                <option value="none">--select option--</option>
+                <option value="vizag">Vizag</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="banglore">Banglore</option>
+                <option value="chennai">Chennai</option>
+                <option value="delhi">Delhi</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="pune">Pune</option>
+            </select>
+            <label for="departure-date">Departure: </label>
+            <input type="date" name="departure" id="departure-date">
+            <label for="seat-type">Class: 
+                <select name="seat" id="seat-type">
+                    <option value="#">--select option--</option>
+                    <option value="economy">Economy</option>
+                    <option value="bussiness">Bussiness</option>
+                    <option value="first-class">First Class</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset class="passengers div">
+            <label for="number-passengers">Number of passengers:
+                <input type="number" name="number" placeholder="1-6" id="number-passengers" min=1 max=6 />
+            </label>
+        </fieldset>
+        <button id="submit" style="color:black; margin-left: 200px; border-color: black; margin-top: 20px;">Payment</button>
+        <!-- <fieldset class="submit div">
+            <input id="submit" type="button" value="Submit">
+        </fieldset> -->
+    </form>
+</div>
+</body>
+</html>
