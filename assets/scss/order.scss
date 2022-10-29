@@ -1,0 +1,229 @@
+#releaseform {
+  #heading {
+    position: relative;
+    width: fit-content;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
+  }
+  input {
+    position: relative;
+    width: 300px;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 14px 16px;
+    font-size: 17px;
+    border: 1px solid #dfe1e4;
+    border-radius: 10px;
+    outline: 0;
+  }
+  input:hover {
+    background-color: #dfe1e4;
+  }
+  select {
+    position: relative;
+    width: 300px;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 14px 16px;
+    font-size: 17px;
+    border: 1px solid #dfe1e4;
+    border-radius: 10px;
+    outline: 0;
+  }
+  select:hover {
+    background-color: #dfe1e4;
+  }
+  button {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 0;
+    background-color: var(--themeColor);
+    border-radius: 10px;
+    outline: 0;
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    user-select: none;
+  }
+  button:hover {
+    background-color: var(--themeColorHover);
+  }
+}
+
+#order {
+  list-style-type: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 44%;
+  background-color: white;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px slategray;
+
+  #order-delete {
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 14px;
+    top: 10px;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    i {
+      padding: 8px;
+      border-radius: 50%;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      background-color: rgb(242, 242, 242);
+      border-radius: 50%;
+    }
+  }
+  #order-markdone {
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    i {
+      padding: 8px;
+      border-radius: 50%;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      background-color: rgb(242, 242, 242);
+      border-radius: 50%;
+    }
+  }
+  #order-content {
+    z-index: 0;
+    position: relative;
+    height: 50%;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+
+    #order-detail-left {
+      font-weight: bold;
+      text-align: right;
+    }
+    #order-detail-right {
+      height: fit-content;
+      width: fit-content;
+      text-align: left;
+      margin-left: 10px;
+    }
+  }
+  #new-release-form {
+    border-top: 1px solid #c9c9c9;
+    position: relative;
+    height: 50px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    input {
+      position: relative;
+      width: 20%;
+      padding: 7px 12px;
+      border: 1px solid #dfe1e4;
+      border-radius: 10px;
+    }
+    input:hover {
+      background-color: #dfe1e4;
+    }
+    button {
+      position: relative;
+      width: 20%;
+      height: 35px;
+      font-size: 0.8em;
+      padding: 7px 10px;
+      border: 1px solid #dfe1e4;
+      border-radius: 10px;
+      background-color: var(--themeColor);
+
+      color: white;
+    }
+    button:hover {
+      background-color: var(--themeColorHover);
+    }
+  }
+  #releases {
+    border-top: 1px solid #c9c9c9;
+    position: relative;
+    // background-color: red;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    #release-content {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row;
+      margin: 10px;
+      margin-top: 0;
+      position: relative;
+      word-wrap: break-word;
+      border-radius: 10px;
+      background-color: #f0f2f5;
+      width: 80%;
+      font-size: 15px;
+      padding: 10px;
+    }
+    #release-text {
+      margin-right: 10px;
+    }
+    #release-delete {
+      margin-left: 10px;
+      width: 30px;
+      height: 30px;
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      i {
+        padding: 8px;
+        border-radius: 50%;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:hover {
+        background-color: rgb(222, 222, 222);
+        border-radius: 50%;
+      }
+    }
+  }
+  // height: 500px;
+}

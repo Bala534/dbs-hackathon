@@ -1,0 +1,22 @@
+:root {
+    --themeColor: #951cff;
+    --themeColorHover: #7301d7;
+}
+button {
+    user-select: none;
+    cursor: pointer;
+}
+body {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    background-color: #f0f2f5;
+    #layout-main {
+        height: calc(100vh - 50px);
+        width: 100%;
+        background-color: #f0f2f5;
+    }
+}
